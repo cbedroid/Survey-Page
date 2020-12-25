@@ -1,4 +1,4 @@
-# Survey-Page
+# Survey-Form-Page
 
 A [**FreeCodeCamp**](https://freecodecamp.org)
 Software Engineer's Survey Page
@@ -10,7 +10,7 @@ For more information about this project, Visit [here][project-doc].
 This Responsive Web Design was made using [**HTML5**][html],
 [**CSS**][css], and [**BootStrap4**][bootstrap].
 
-### Demo :rocket: [Survey Blog][githubpage]
+### Demo :rocket: [Survey Form Page][githubpage]
 
 ## Getting started
 
