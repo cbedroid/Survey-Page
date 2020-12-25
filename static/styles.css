@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+:root {
+    --primary: #1b1b32;
+    --secondary: #ffdd1ffb;
+    --primary-light: rgba(27, 27, 50, 0.85);
+    --text-primary: #fff;
+    --text-secondary: #a5a5a5;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--text-primary);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    color: #477ca7;
+}
+
+a:visited {
+    color: #74638f;
+}
+
+.secondary-text {
+    color: var(--secondary) !important;
+}
+
+.lg-title {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+#title {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+}
+
+.subtitle {
+    margin-top: 15px;
+}
+
+.subtext {
+    color: var(--text-secondary);
+}
+
+main {}
+
+.hero.bg-image {
+    display: block;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ccc;
+    background-attachment: relative;
+    width: 100%;
+    min-height: 300px;
+    height: 300px;
+}
+
+#intro-hero {
+    position: relative;
+}
+
+#intro-hero .hero-wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-content: start;
+    justify-content: center;
+    padding: 20px 30px;
+    font-family: "Lato", sans-serif;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+#intro-hero .hero-text {
+    text-align: text-center;
+}
+
+#intro-hero .title {
+    font-family: "Anton",sans-serif;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+#intro-hero .subtitle {
+    font-weight: 200;
+    letter-spacing: .12ch;
+    color: #fff;
+    margin: 4px 0;
+}
+
+#statistics-card {
+    color: #fff;
+    padding: 20px 0;
+    background: var(--primary-light);
+}
+
+#statistics-card .card {
+    height: 100%;
+    text-align: center;
+    background: var(--primary);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3);
+}
+
+#statistics-card .card:hover {
+    transform: scale(1.1);
+}
+
+#statistics-card img {
+    display: block;
+    height: 95px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    border: none;
+    box-shadow: 2px 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+#statistics-card .card-title {
+    font-family: "Anton",sans-serif;
+    color: var(--secondary);
+    letter-spacing: .2ch;
+    text-shadow: 2px 2px 8px #000;
+}
+
+#statistics-card .card-body p:nth-last-child(2) {
+    font-size: .94rem;
+    font-weight: 200;
+}
+
+#survey {
+    background: var(--primary);
+    background: #1b1b32;
+    color: var(--text-primary);
+}
+
+#survey-form #comments {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+}
+
+#survey #first-job {
+    transition: .5s ease-in-out;
+}
+
+#survey-form #submit {
+    font-weight: 500;
+    height: 50px;
+}
+
+footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+footer {
+    background: #1c1c1c;
+    color: #fff;
+    min-height: 40px;
+    padding: 10px;
+}
+
+footer a {
+    color: aqua;
+    text-decoration: underline;
+    vertical-align: center;
+}
+
+footer a:visited {
+    color: rgb(137, 90, 214);
+}
+
+@media screen and (max-width: 400px) {
+    #title {
+        font-size: 1.75rem;
+    }
+
+    #description {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    #checkbox_form .form-check {
+        margin-bottom: 10px;
+    }
+
+    #checkbox_form input[type=checkbox] {
+        /* Double-sized Checkboxes */
+        -ms-transform: scale(1.6); /* IE */
+        -moz-transform: scale(1.6); /* FF */
+        -webkit-transform: scale(1.6); /* Safari and Chrome */
+        -o-transform: scale(1.6); /* Opera */
+        font-size: 110%;
+    }
+
+    #checkbox_form label {
+        padding-left: 8px;
+    }
+}

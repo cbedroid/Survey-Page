@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./static/styles.css">
+    <title> Software Engineer Survey </title>
+  </head>
+  <body>
+    <main id="main" class="bg-light">
+      <section id="introduction">
+        <div id="intro-hero" class="hero bg-image" style="background-image: url('./assets//images/banner.png')">
+          <div class="hero-wrapper">
+            <div class="hero-text">
+              <h1 class="title"> Software Engineer</h1>
+              <p class="subtitle w-75 w-sm-100"> Help us better help software engineers like yourself</p>
+              <p class="subtitle d-none d-sm-block"> Your voice matters, we want to hear from you</p>
+              <a href="#survey-form" class="action-btn btn btn-outline-warning mt-3"> Take a Quick Survey</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="bg-warning my-0">
+
+      <section id="statistics">
+        <div id="statistics-card">
+          <div class="container">
+            <div class="row">
+              <!-- Card 1-->
+              <div class="col-6 col-md-3 mb-3">
+                <div class="card">
+                  <img src="./assets/images/clipart_1.png" class="card-img-top" alt="software engineer coding clipart">
+                  <div class="card-body">
+                    <h4 class="card-title">Engineers</h4>
+                    <p class="card-text">In the U.S. alone, There are over <span class="secondary-text">4.4 millions</span> software engineers.</p>
+                    <p class="card-text"><small class="text-muted">Last updated Dec,20 2020 </small></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2-->
+              <div class="col-6 col-md-3 mb-3">
+                <div class="card">
+                  <img src="./assets/images/clipart_2.png" class="card-img-top" alt="software engineer jobs clipart">
+                  <div class="card-body">
+                    <h4 class="card-title">Jobs</h4>
+                    <p class="card-text">There are <span class="secondary-text">1,365,500</span> software engineers jobs available now !</p>
+                    <p class="card-text"><small class="text-muted">Last updated Dec,20 2020 </small></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3-->
+              <div class="col-6 col-md-3 mb-3">
+                <div class="card">
+                  <img src="./assets/images/clipart_3.png" class="card-img-top" alt="software engineer employment clipart">
+                  <div class="card-body">
+                    <h4 class="card-title">Growth</h4>
+                    <p class="card-text"> The employment rate amongst software engineers is <span class="secondary-text">87%</span>.</p>
+                    <p class="card-text"><small class="text-muted">Last updated Dec,20 2020 </small></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4-->
+              <div class="col-6 col-md-3 mb-3">
+                <div class="card">
+                  <img src="./assets/images/clipart_4.png" class="card-img-top" alt="software engineer salary clipart">
+                  <div class="card-body">
+                    <h4 class="card-title">Salary</h4>
+                    <p class="card-text">The average software engineer's salary is <span class="secondary-text">$107,501</span> per year.</p>
+                    <p class="card-text"><small class="text-muted">Last updated Dec,20 2020 </small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="my-0 bg-warning">
+        <section id="survey" class="py-3">
+          <header class="text-center">
+            <h1 id="title" class="secondary-text"> Software Engineer Survey</h1>
+            <h5 id="description"> Your voice matters, make it count today!</h5>
+          </header>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-9">
+                <form action="#" id="survey-form">
+                  <!-- Name -->
+                  <div class="form-group py-2">
+                    <label id="name-label" for="name" class="form-label">Name</label>
+                    <input class="form-control" type="text" id="name" aria-describedby="surveyor-name" placeholder="Enter Your Name" required>
+                  </div>
+                  <!-- Email-->
+                  <div class="py-2">
+                    <label id="email-label" for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="email-help-text" placeholder="Enter your email" required>
+                    <div id="email-help-text" class="form-text">
+                      <small class="subtext">We'll never share your email with anyone else.</small>
+                    </div>
+                  </div>
+                  <!-- Age -->
+                  <div class="py-2">
+                    <label id="number-label" for="number" class="form-label">Age <small class="sm-grey">(optional)</small></label>
+                    <input type="number" class="col-12 col-sm-6 form-control" id="number"
+                      placeholder="Enter your age" min="8" max="80">
+                  </div>
+                  <div class="form-group py-2">
+                    <p>Which software engineer role best describes you?</p>
+                    <select class="form-control" name="type" id="dropdown">
+                      <option disabled-selected-value> Select a software engineer role</option>
+                      <option value="front-end">Front-end Developer</option>
+                      <option value="back-end">Back-end Developer</option>
+                      <option value="full-stack">Full-stack Developer</option>
+                      <option value="mid-tier">Middle-Tier Developer</option>
+                      <option value=web-dev>Web Developer</option>
+                      <option value="desktop">Desktop Developer</option>
+                      <option value="mobile">Mobile Developer</option>
+                      <option value="graphic">Graphics Developer</option>
+                      <option value="dev-ops">DevOps Developer</option>
+                      <option value="data">Data Scientist Developer</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <!-- Experience level-->
+                  <div class="form-group py-2">
+                    <p>How many years of experience do you have at this role?</p>
+                    <select class="form-control" name="experience" id="dropdown">
+                      <option disabled-selected-value> Select your experience level</option>
+                      <option value="one-year">less than 1 year </option>
+                      <option value="three">less than 3 years </option>
+                      <option value="five">less than 5 years </option>
+                      <option value="five_plus">more than 5 years </option>
+                      <option value="ten_plus">more than 10 years </option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group py-2" id="checkbox_form">
+                    <div class="pb-2">
+                      <p style="margin:0;padding:0 15px 0 0">
+                        What programming language(s) do you use on daily basis?
+                      </p>
+                      <small class="clue text-secondary">(Check all that apply)</small>
+                    </div>
+                    <!---->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="python">
+                      <label class="form-check-label" for="language">
+                        Python
+                      </label>
+                    </div>
+
+                    <!---->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="java">
+                      <label class="form-check-label" for="language">
+                        Java
+                      </label>
+                    </div>
+                    <!---->
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="c">
+                      <label class="form-check-label" for="language">
+                        C lang <span><small>(C++ and C#)</small></span>
+                      </label>
+                    </div>
+                    <!---->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="javascript">
+                      <label class="form-check-label" for="language">
+                        Javascript <span><small>(React and NodeJS)</small></span>
+                      </label>
+                    </div>
+                    <!---->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="typescript">
+                      <label class="form-check-label" for="language">
+                        Typescript
+                      </label>
+                    </div>
+                    <!---->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="php">
+                      <label class="form-check-label" for="language">
+                        PHP
+                      </label>
+                    </div>
+                    <!---->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="ruby">
+                      <label class="form-check-label" for="language">
+                        Ruby
+                      </label>
+                    </div>
+                    <!---->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="pearl">
+                      <label class="form-check-label" for="language">
+                        Perl
+                      </label>
+                    </div>
+                    <!---->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="scala">
+                      <label class="form-check-label" for="language">
+                        Scala
+                      </label>
+                    </div>
+                    <!-- -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="kotlin">
+                      <label class="form-check-label" for="language">
+                        Kotlin
+                      </label>
+                    </div>
+                    <!-- -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="swift">
+                      <label class="form-check-label" for="language">
+                        Swift
+                      </label>
+                    </div> <!---->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="others">
+                      <label class="form-check-label" for="language">
+                        others
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Employment -->
+                  <div class="form-group mb-3" id="employment">
+                    <p>Are you currently employed as a software engineer?</p>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="employment" value="yes" required>
+                      <label class="form-check-label">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="employment" value="no" />
+                      <label class="form-check-label">
+                        No
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Employment Secondary Form -->
+                  <div id="first-job" class="form-group mb-3 d-none">
+                    <p disabled>How long did it take to land your first job?</p>
+                    <select class="form-control" name="employment-2">
+                      <option disabled-selected-value> Select an option</option>
+                      <option value="one">less than 1 year</option>
+                      <option value="two">less than 2 years</option>
+                      <option value="three">less than 3 years</option>
+                      <option value="other">other</option>
+                    </select>
+                  </div>
+
+                  <!-- Additional Comment-->
+                  <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea
+                      id="comments"
+                      class="input-textarea"
+                      name="comment"
+                      placeholder="Enter your comment here..."></textarea>
+                  </div>
+
+                  <!-- Submit -->
+                  <div class="form-group">
+                    <button id="submit" class="btn btn-outline-success btn-block" type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <hr class="my-0 bg-warning">
+      <footer>
+        <div class="wrapper mt-2">
+          <p class="text-center">
+            <span>Made with <i class="fa fa-heart" style="color:red;"></i></span>
+            <span>by <a href="https://linkedin.com/in/cornelius-brooks" target="_blank">Cbedroid</a></span>
+          </p>
+        </div>
+      </footer>
+      <script src="./static/main.js"></script>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+  </html>
