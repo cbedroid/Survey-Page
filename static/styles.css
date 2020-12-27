@@ -28,13 +28,13 @@ h1 {
     font-family: Roboto, sans-serif;
 }
 
-a {
+/* a {
     color: #477ca7;
 }
 
 a:visited {
     color: #74638f;
-}
+} */
 
 .secondary-text {
     color: var(--secondary) !important;
@@ -58,7 +58,63 @@ a:visited {
     color: var(--text-secondary);
 }
 
-main {}
+main.hero.bg-image {
+    display: block;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ccc;
+    background-attachment: relative;
+    width: 100%;
+    min-height: 300px;
+    height: 300px;
+}
+
+#thankyou_modal .modal-content {
+    display: block;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ccc;
+    background-attachment: relative;
+    width: 100%;
+    min-height: 300px;
+    height: 300px;
+}
+
+#thankyou_modal .modal-header {
+    vertical-align: middle;
+}
+
+#thankyou_modal .modal-title {
+    font-family: "Anton", sans-serif;
+    padding-top: 7px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 300;
+    width: 95%;
+}
+
+#thankyou_modal .btn-close {
+    vertical-align: top;
+    padding: 1px 5px;
+    font-size: 1.7rem;
+    transition: .1s ease-in-out;
+}
+
+#thankyou_modal .btn-close span {
+    font-weight: 100;
+    color: whitesmoke;
+}
+
+#thankyou_modal .btn-close:hover {
+    transform: rotate(180deg);
+}
+
+#thankyou_modal .modal-body {
+    font-family: "Anton", sans-serif;
+    font-weight: 200;
+}
 
 .hero.bg-image {
     display: block;
@@ -129,12 +185,13 @@ main {}
 #statistics-card img {
     display: block;
     height: 95px;
-    width: 150px;
+    width: 115px;
     border-radius: 50%;
     margin: 0 auto;
-    padding: 5px;
-    border: none;
-    box-shadow: 2px 5px 15px rgba(255, 255, 255, 0.5);
+    margin-top: 8px;
+    box-shadow: 2px 5px 20px rgba(255, 255, 255, 0.3);
+    padding: 2px;
+    background-color: inherit;
 }
 
 #statistics-card .card-title {
@@ -144,16 +201,23 @@ main {}
     text-shadow: 2px 2px 8px #000;
 }
 
-#statistics-card .card-body p:nth-last-child(2) {
+#statistics-card .card-body p:nth-child(2) {
     font-size: .94rem;
     font-weight: 200;
 }
 
 #survey {
-    background: var(--primary);
     background: #1b1b32;
     color: var(--text-primary);
 }
+
+#survey option {
+    background-color: rgba(0, 0, 0, 0.95);
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
+#survey #location {}
 
 #survey-form #comments {
     width: 100%;
@@ -192,19 +256,14 @@ footer a:visited {
     color: rgb(137, 90, 214);
 }
 
-@media screen and (max-width: 400px) {
-    #title {
-        font-size: 1.75rem;
-    }
-
-    #description {
-        font-size: .9rem;
-    }
-}
-
+/* Tablets and Phones */
 @media screen and (max-width: 905px) {
     #checkbox_form .form-check {
         margin-bottom: 10px;
+    }
+
+    #statistics-card .card-title {
+        font-size: 1.3rem;
     }
 
     #checkbox_form input[type=checkbox] {
@@ -218,5 +277,33 @@ footer a:visited {
 
     #checkbox_form label {
         padding-left: 8px;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 400px) {
+    #title {
+        font-size: 1.75rem;
+    }
+
+    #description {
+        font-size: .9rem;
+    }
+
+    #statistics-card .card-body {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    #statistics-card .card-title {
+        font-size: 1.3rem;
+    }
+
+    #statistics-card .card-body p:nth-child(2) {
+        font-size: .84rem;
+    }
+
+    #statistics-card .card-body p:last-child {
+        font-size: .80rem;
     }
 }
