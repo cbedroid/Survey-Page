@@ -20,21 +20,13 @@ body {
     line-height: 1.4;
     color: var(--text-primary);
     margin: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
 }
 
 h1 {
     font-family: Roboto, sans-serif;
 }
-
-/* a {
-    color: #477ca7;
-}
-
-a:visited {
-    color: #74638f;
-} */
 
 .secondary-text {
     color: var(--secondary) !important;
