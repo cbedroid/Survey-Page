@@ -1,301 +1,361 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
 
 :root {
-    --primary: #1b1b32;
-    --secondary: #ffdd1ffb;
-    --primary-light: rgba(27, 27, 50, 0.85);
-    --text-primary: #fff;
-    --text-secondary: #a5a5a5;
+  --primary: #1b1b32;
+  --secondary: #ffdd1ffb;
+  --primary-light: rgba(27, 27, 50, 0.85);
+  --text-primary: #fff;
+  --text-secondary: #a5a5a5;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--text-primary);
-    margin: 0;
-    width: 100vw;
-    height: 100%;
+  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-primary);
+  margin: 0;
+  width: 100vw;
+  height: 100%;
 }
 
 h1 {
-    font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .secondary-text {
-    color: var(--secondary) !important;
+  color: var(--secondary) !important;
 }
 
 .lg-title {
-    font-size: 4rem;
-    margin-bottom: 0;
+  font-size: 4rem;
+  margin-bottom: 0;
 }
 
 #title {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
 }
 
 .subtitle {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .subtext {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 main.hero.bg-image {
-    display: block;
-    background-position: 50% 40%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #ccc;
-    background-attachment: relative;
-    width: 100%;
-    min-height: 300px;
-    height: 300px;
+  display: block;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ccc;
+  background-attachment: relative;
+  width: 100%;
+  min-height: 300px;
+  height: 300px;
 }
 
 #thankyou_modal .modal-content {
-    display: block;
-    background-position: 50% 40%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #ccc;
-    background-attachment: relative;
-    width: 100%;
-    min-height: 300px;
-    height: 300px;
+  display: block;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ccc;
+  background-attachment: relative;
+  width: 100%;
+  min-height: 300px;
+  height: 300px;
 }
 
 #thankyou_modal .modal-header {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 #thankyou_modal .modal-title {
-    font-family: "Anton", sans-serif;
-    padding-top: 7px;
-    vertical-align: middle;
-    text-align: center;
-    font-weight: 300;
-    width: 95%;
+  font-family: "Anton", sans-serif;
+  padding-top: 7px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 300;
+  width: 95%;
 }
 
 #thankyou_modal .btn-close {
-    vertical-align: top;
-    padding: 1px 5px;
-    font-size: 1.7rem;
-    transition: .1s ease-in-out;
+  vertical-align: top;
+  padding: 1px 5px;
+  font-size: 1.7rem;
+  transition: 0.1s ease-in-out;
 }
 
 #thankyou_modal .btn-close span {
-    font-weight: 100;
-    color: whitesmoke;
+  font-weight: 100;
+  color: whitesmoke;
 }
 
 #thankyou_modal .btn-close:hover {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #thankyou_modal .modal-body {
-    font-family: "Anton", sans-serif;
-    font-weight: 200;
+  font-family: "Anton", sans-serif;
+  font-weight: 200;
 }
 
 .hero.bg-image {
-    display: block;
-    background-position: 50% 40%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #ccc;
-    background-attachment: relative;
-    width: 100%;
-    min-height: 300px;
-    height: 300px;
+  display: block;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ccc;
+  background-attachment: relative;
+  width: 100%;
+  min-height: 300px;
+  height: 300px;
 }
 
 #intro-hero {
-    position: relative;
+  position: relative;
 }
 
 #intro-hero .hero-wrapper {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-content: start;
-    justify-content: center;
-    padding: 20px 30px;
-    font-family: "Lato", sans-serif;
-    background: rgba(0, 0, 0, 0.3);
-    color: #fff;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-content: start;
+  justify-content: center;
+  padding: 20px 30px;
+  font-family: "Lato", sans-serif;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
 }
 
 #intro-hero .hero-text {
-    text-align: text-center;
+  text-align: text-center;
 }
 
 #intro-hero .title {
-    font-family: "Anton",sans-serif;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
-    font-weight: 400;
-    color: var(--secondary);
+  font-family: "Anton", sans-serif;
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--secondary);
 }
 
 #intro-hero .subtitle {
-    font-weight: 200;
-    letter-spacing: .12ch;
-    color: #fff;
-    margin: 4px 0;
+  font-weight: 200;
+  letter-spacing: 0.12ch;
+  color: #fff;
+  margin: 4px 0;
 }
 
 #statistics-card {
-    color: #fff;
-    padding: 20px 0;
-    background: var(--primary-light);
+  color: #fff;
+  padding: 20px 0;
+  background: var(--primary-light);
 }
 
 #statistics-card .card {
-    height: 100%;
-    text-align: center;
-    background: var(--primary);
-    transition: .3s ease-in-out;
-    cursor: pointer;
-    box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3);
+  height: 100%;
+  text-align: center;
+  background: var(--primary);
+  box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 #statistics-card .card:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3);
 }
 
 #statistics-card img {
-    display: block;
-    height: 95px;
-    width: 115px;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-top: 8px;
-    box-shadow: 2px 5px 20px rgba(255, 255, 255, 0.3);
-    padding: 2px;
-    background-color: inherit;
+  display: block;
+  height: 95px;
+  width: 115px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 8px;
+  box-shadow: 2px 5px 20px rgba(255, 255, 255, 0.3);
+  padding: 2px;
+  background-color: inherit;
 }
 
 #statistics-card .card-title {
-    font-family: "Anton",sans-serif;
-    color: var(--secondary);
-    letter-spacing: .2ch;
-    text-shadow: 2px 2px 8px #000;
+  font-family: "Anton", sans-serif;
+  color: var(--secondary);
+  letter-spacing: 0.2ch;
+  text-shadow: 2px 2px 8px #000;
 }
 
 #statistics-card .card-body p:nth-child(2) {
-    font-size: .94rem;
-    font-weight: 200;
+  font-size: 0.94rem;
+  font-weight: 200;
+}
+#statistics-card .card-footer {
+  font-size: 0.94rem;
+  font-weight: 200;
 }
 
 #survey {
-    background: #1b1b32;
-    color: var(--text-primary);
+  background: #1b1b32;
+  color: var(--text-primary);
 }
 
 #survey option {
-    background-color: rgba(0, 0, 0, 0.95);
-    color: var(--text-primary);
-    font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: var(--text-primary);
+  font-weight: bold;
 }
 
-#survey #location {}
+#survey #location {
+}
 
 #survey-form #comments {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
 }
 
 #survey #first-job {
-    transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #survey-form #submit {
-    font-weight: 500;
-    height: 50px;
+  font-weight: 500;
+  height: 50px;
 }
 
 footer {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-}
-
-footer {
-    background: #1c1c1c;
-    color: #fff;
-    min-height: 40px;
-    padding: 10px;
+  font-weight: 500;
+  background: #1c1c1c;
+  color: #fff;
+  min-height: 40px;
+  padding: 10px;
 }
 
 footer a {
-    color: aqua;
-    text-decoration: underline;
-    vertical-align: center;
+  color: lightgrey;
+  vertical-align: center;
 }
 
-footer a:visited {
-    color: rgb(137, 90, 214);
+footer #creator {
+  font-family: "Raleway", sans-serif;
+}
+footer #projects li {
+  margin: 4px 0px;
+}
+footer #contact_link {
+  color: grey;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: 0.3s ease-in-out;
+}
+footer #contact_link:hover {
+  color: lightgrey;
 }
 
+footer .title h3 {
+  color: #fbdb20;
+  font-family: "Anton", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #fbdb20;
+}
+footer .social-group {
+  padding: 0;
+}
+footer .social-group li {
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  margin: 4px 8px;
+  list-style: none;
+  box-shadow: 0 0 8px rgba(200, 200, 200, 0.15);
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: 0.7s ease-in-out;
+}
+footer .social-group li:hover {
+  background: #fff;
+  box-shadow: 0 0 16px rgba(156, 163, 175, 0.85);
+}
+footer .social-link {
+  color: #fff !important;
+  transition: color 0.5s;
+}
+footer .social-link i {
+  font-size: 2rem;
+}
+footer .social-group li:hover .social-link--github {
+  color: #000 !important;
+}
+footer .social-group li:hover .social-link--twitter {
+  color: #1da1f2 !important;
+}
+footer .social-group li:hover .social-link--youtube {
+  color: #f00 !important;
+}
 /* Tablets and Phones */
 @media screen and (max-width: 905px) {
-    #checkbox_form .form-check {
-        margin-bottom: 10px;
-    }
+  #checkbox_form .form-check {
+    margin-bottom: 10px;
+  }
 
-    #statistics-card .card-title {
-        font-size: 1.3rem;
-    }
+  #statistics-card .card-title {
+    font-size: 1.3rem;
+  }
 
-    #checkbox_form input[type=checkbox] {
-        /* Double-sized Checkboxes */
-        -ms-transform: scale(1.6); /* IE */
-        -moz-transform: scale(1.6); /* FF */
-        -webkit-transform: scale(1.6); /* Safari and Chrome */
-        -o-transform: scale(1.6); /* Opera */
-        font-size: 110%;
-    }
+  #checkbox_form input[type="checkbox"] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(1.6); /* IE */
+    -moz-transform: scale(1.6); /* FF */
+    -webkit-transform: scale(1.6); /* Safari and Chrome */
+    -o-transform: scale(1.6); /* Opera */
+    font-size: 110%;
+  }
 
-    #checkbox_form label {
-        padding-left: 8px;
-    }
+  #checkbox_form label {
+    padding-left: 8px;
+  }
 }
 
 /* Phones */
 @media screen and (max-width: 400px) {
-    #title {
-        font-size: 1.75rem;
-    }
+  #title {
+    font-size: 1.75rem;
+  }
 
-    #description {
-        font-size: .9rem;
-    }
+  #description {
+    font-size: 0.9rem;
+  }
 
-    #statistics-card .card-body {
-        padding-left: 7px;
-        padding-right: 7px;
-    }
+  #statistics-card .card-body {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 
-    #statistics-card .card-title {
-        font-size: 1.3rem;
-    }
+  #statistics-card .card-title {
+    font-size: 1.3rem;
+  }
 
-    #statistics-card .card-body p:nth-child(2) {
-        font-size: .84rem;
-    }
+  #statistics-card .card-body p:nth-child(2) {
+    font-size: 0.84rem;
+  }
 
-    #statistics-card .card-body p:last-child {
-        font-size: .80rem;
-    }
+  #statistics-card .card-body p:last-child {
+    font-size: 0.8rem;
+  }
 }
