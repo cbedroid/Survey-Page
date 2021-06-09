@@ -265,7 +265,8 @@ footer #contact_link:hover {
   color: lightgrey;
 }
 
-footer .title h3 {
+footer .title h3,
+h4 {
   color: #fbdb20;
   font-family: "Anton", sans-serif;
   font-weight: 500;
@@ -279,9 +280,10 @@ footer .social-group {
 footer .social-group li {
   display: grid;
   place-items: center;
-  width: 45px;
-  height: 45px;
-  margin: 4px 8px;
+  width: 60px;
+  height: 50px;
+  margin: 4px 4px;
+  padding: 8px;
   list-style: none;
   box-shadow: 0 0 8px rgba(200, 200, 200, 0.15);
   border-radius: 50%;
@@ -298,6 +300,7 @@ footer .social-link {
 }
 footer .social-link i {
   font-size: 2rem;
+  padding: 2px;
 }
 footer .social-group li:hover .social-link--github {
   color: #000 !important;
