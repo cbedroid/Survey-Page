@@ -29,6 +29,10 @@ body {
 h1 {
   font-family: Roboto, sans-serif;
 }
+ul {
+  list-style: none;
+  padding: 0;
+}
 
 .secondary-text {
   color: var(--secondary) !important;
@@ -243,7 +247,8 @@ footer {
 }
 
 footer a {
-  color: lightgrey;
+  color: #623ba7;
+  font-weight: 600;
   vertical-align: center;
 }
 
