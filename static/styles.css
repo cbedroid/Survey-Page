@@ -126,8 +126,11 @@ main.hero.bg-image {
   height: 300px;
 }
 
+
+
 #intro-hero {
   position: relative;
+  height: 555px;
 }
 
 #intro-hero .hero-wrapper {
@@ -162,9 +165,12 @@ main.hero.bg-image {
 }
 
 #statistics-card {
+  display:flex;
+  align-items: center;
   color: #fff;
   padding: 20px 0;
   background: var(--primary-light);
+  height: 550px;
 }
 
 #statistics-card .card {
@@ -210,6 +216,8 @@ main.hero.bg-image {
 }
 
 #survey {
+  padding-top: 64px;
+  padding-bottom: 64px;
   background: #1b1b32;
   color: var(--text-primary);
 }
@@ -238,6 +246,7 @@ main.hero.bg-image {
   height: 50px;
 }
 
+
 footer {
   font-weight: 500;
   background: #1c1c1c;
@@ -245,7 +254,15 @@ footer {
   min-height: 40px;
   padding: 10px;
 }
-
+#footer-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;
+  height: auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 footer a {
   color: #623ba7;
   font-weight: 600;
@@ -268,6 +285,19 @@ footer #contact_link {
 }
 footer #contact_link:hover {
   color: lightgrey;
+}
+footer #author-img{
+  margin-top: 10px;
+  width: 125px;
+  height: 75px;
+  border: 3px solid transparent;
+  box-shadow: 2px 2px 5px rgba(200,200,200,.4);
+
+}
+
+footer #author-img:hover{
+  border-color: #333;
+  box-shadow: 2px 2px 15px rgba(222,222,222,.4);
 }
 
 footer .title h3,
