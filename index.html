@@ -84,8 +84,8 @@
       </section>
       <hr class="bg-warning my-0">
       <section id="statistics">
-        <div id="statistics-card" class="py-5">
-          <div class="container">
+        <div id="statistics-card-wrapper" class="py-5">
+          <div class="container-fluid">
             <div class="row">
               <!-- Card 1-->
               <div class="col-6 col-md-3 mb-3">
@@ -154,12 +154,12 @@
               <div class="col-12 col-sm-9">
                 <form action="#" id="survey-form">
                   <!-- Name -->
-                  <div class="form-group">
+                  <div class="form-group mb-4">
                     <label id="name-label" for="name" class="form-label">Name</label>
                     <input class="form-control" type="text" id="name" aria-describedby="surveyor-name" placeholder="Enter Your Name" required>
                   </div>
                   <!-- Email-->
-                  <div class="form-group">
+                  <div class="form-group mb-4">
                     <label id="email-label" for="email" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="email" aria-describedby="email-help-text" placeholder="Enter your email" required>
                     <div id="email-help-text" class="form-text">
@@ -167,20 +167,20 @@
                     </div>
                   </div>
                   <!-- Location-->
-                  <div class="form-group">
+                  <div class="form-group mb-4">
                     <p>Location</p>
                     <select class="form-control" name="type" id="location">
                       <option disabled-selected-value> Location</option>
                     </select>
                   </div>
                   <!-- Age -->
-                  <div class="form-group">
+                  <div class="form-group mb-4">
                     <label id="number-label" for="number" class="form-label">Age <small class="sm-grey">(optional)</small></label>
                     <input type="number" class="col-12 col-sm-6 form-control" id="number"
                       placeholder="Enter your age" min="8" max="80">
                   </div>
                   <!-- Role -->
-                  <div class="form-group">
+                  <div class="form-group mb-4">
                     <p>Which software engineer role best describes you?</p>
                     <select class="form-control" name="type" id="dropdown">
                       <option disabled-selected-value> Select a software engineer role</option>
@@ -198,7 +198,7 @@
                     </select>
                   </div>
                   <!-- Experience level-->
-                  <div class="form-group">
+                  <div class="form-group mb-4">
                     <p>How many years of experience do you have at this role?</p>
                     <select class="form-control" name="experience" id="dropdown">
                       <option disabled-selected-value> Select your experience level</option>
@@ -211,7 +211,7 @@
                     </select>
                   </div>
 
-                  <div class="form-group" id="checkbox_form">
+                  <div class="form-group mb-4" id="checkbox_form">
                     <div class="">
                       <p style="margin:0;padding:0 15px 0 0">
                         What programming language(s) do you use on a daily basis?
@@ -306,7 +306,7 @@
                   </div>
 
                   <!-- Employment -->
-                  <div class="form-group mb-3" id="employment">
+                  <div class="form-group mb-4 mb-3" id="employment">
                     <p>Are you currently employed as a software engineer?</p>
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" type="radio" name="employment" value="yes" required>
@@ -322,20 +322,27 @@
                     </div>
                   </div>
 
-                  <!-- Employment Secondary Form -->
-                  <div id="first-job" class="form-group mb-3 d-none">
-                    <p disabled>How long did it take to land your first job?</p>
+                  <!-- Employment Secondary Form 1-->
+                  <div id="company-name"  class="h-form form-group mb-4 mb-3 d-none">
+                      <label class="form-label">
+                        what is the name of the company you work for?
+                      </label>
+                      <input class="form-control" placeholder="company name"/>
+                  </div>
+                  <!-- Employment Secondary Form 2-->
+                  <div id="job-duration" class="h-form form-group mb-4 mb-3 d-none">
+                    <p disabled>How long have you work at this company?</p>
                     <select class="form-control" name="employment-2">
                       <option disabled-selected-value> Select an option</option>
                       <option value="one">less than 1 year</option>
-                      <option value="two">less than 2 years</option>
-                      <option value="three">less than 3 years</option>
+                      <option value="two">more than 2, but less than 5 years</option>
+                      <option value="three">more than 5 years</option>
                       <option value="other">other</option>
                     </select>
                   </div>
 
                   <!-- Additional Comment-->
-                  <div class="form-group">
+                  <div class="form-group mb-4">
                     <p>Any comments or suggestions?</p>
                     <textarea
                       id="comments"
@@ -345,7 +352,7 @@
                   </div>
 
                   <!-- Submit -->
-                  <div class="form-group">
+                  <div class="form-group mb-4">
                     <button id="submit" class="btn btn-outline-success btn-block" type="submit">Submit</button>
                   </div>
                 </form>
@@ -410,21 +417,21 @@
                 </ul>
               </div>
             </div>
-            
-            <div class="col-12 col-sm-3 order-3 order-sm-2">
-              <div id="creator" class="d-flex flex-column justify-item-around text-center mt-2">
-                <p>
-                  <span>Made with <i class="fa fa-heart" style="color:red;"></i></span>
-                  <span>by <a id="contact_link" href="mailto:martez0812@gmail.com?body=Hi Cornelius," target="_blank">Cbedroid</a></span>
-                  <a class="mx-2" href="http://github.com/cbedroid" target="_blank">
-                    <img id="author-img" class="rounded" src="https://avatars.githubusercontent.com/u/54720725?v=4=" alt="Cbedroid image">
-                  </a>
-                </p>
-              </div>
-            </div>
           </div>
         </div>
-        <div class="row mt-3">
+
+        <div class="row">
+            <div class="col-12  my-5">
+              <div id="creator" class="d-flex flex-row align-items-center justify-content-center">
+                <small>
+                  <span>Made with <i class="fa fa-heart" style="color:red;"></i></span>
+                  <span>by <a id="contact_link" href="mailto:martez0812@gmail.com?body=Hi Cornelius," target="_blank">Cbedroid</a></span>
+                </small>
+                  <a class="mx-4" href="http://github.com/cbedroid" target="_blank">
+                    <img id="author-img" class="rounded-full" src="https://avatars.githubusercontent.com/u/54720725?v=4=" alt="Cbedroid image">
+                  </a>
+              </div>
+            </div>
           <div class="col-12">
             <div class="text-center">
               <small class="d-sm-none text-light align-self-start">Copyright © 2020 NoworNever LLC - All rights reserved.</small>

@@ -70,12 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Hide and unhide secondary employment form
   // according to employment selected radio button
   employment.addEventListener("change", function () {
-    const secondary_employment_form = document.getElementById("first-job");
+    const secondary_employment_form = document.querySelectorAll(".h-form");
 
     if (employment_radio_yes.checked) {
-      secondary_employment_form.classList.remove("d-none");
+      secondary_employment_form.forEach((form) =>
+        form.classList.remove("d-none")
+      );
     } else {
-      secondary_employment_form.classList.add("d-none");
+      secondary_employment_form.forEach((form) => form.classList.add("d-none"));
     }
   });
 

@@ -126,8 +126,6 @@ main.hero.bg-image {
   height: 300px;
 }
 
-
-
 #intro-hero {
   position: relative;
   height: 555px;
@@ -164,8 +162,8 @@ main.hero.bg-image {
   margin: 4px 0;
 }
 
-#statistics-card {
-  display:flex;
+#statistics-card-wrapper {
+  display: flex;
   align-items: center;
   color: #fff;
   padding: 20px 0;
@@ -173,7 +171,7 @@ main.hero.bg-image {
   height: 550px;
 }
 
-#statistics-card .card {
+#statistics-card-wrapper .card {
   height: 100%;
   text-align: center;
   background: var(--primary);
@@ -182,12 +180,12 @@ main.hero.bg-image {
   cursor: pointer;
 }
 
-#statistics-card .card:hover {
+#statistics-card-wrapper .card:hover {
   transform: scale(1.1);
   box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3);
 }
 
-#statistics-card img {
+#statistics-card-wrapper img {
   display: block;
   height: 95px;
   width: 115px;
@@ -199,18 +197,18 @@ main.hero.bg-image {
   background-color: inherit;
 }
 
-#statistics-card .card-title {
+#statistics-card-wrapper .card-title {
   font-family: "Anton", sans-serif;
   color: var(--secondary);
   letter-spacing: 0.2ch;
   text-shadow: 2px 2px 8px #000;
 }
 
-#statistics-card .card-body p:nth-child(2) {
+#statistics-card-wrapper .card-body p:nth-child(2) {
   font-size: 0.94rem;
   font-weight: 200;
 }
-#statistics-card .card-footer {
+#statistics-card-wrapper .card-footer {
   font-size: 0.94rem;
   font-weight: 200;
 }
@@ -246,7 +244,6 @@ main.hero.bg-image {
   height: 50px;
 }
 
-
 footer {
   font-weight: 500;
   background: #1c1c1c;
@@ -254,7 +251,7 @@ footer {
   min-height: 40px;
   padding: 10px;
 }
-#footer-content{
+#footer-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -286,18 +283,18 @@ footer #contact_link {
 footer #contact_link:hover {
   color: lightgrey;
 }
-footer #author-img{
+footer #author-img {
   margin-top: 10px;
-  width: 125px;
-  height: 75px;
+  width: 55px;
+  height: 55px;
   border: 3px solid transparent;
-  box-shadow: 2px 2px 5px rgba(200,200,200,.4);
-
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(200, 200, 200, 0.4);
 }
 
-footer #author-img:hover{
+footer #author-img:hover {
   border-color: #333;
-  box-shadow: 2px 2px 15px rgba(222,222,222,.4);
+  box-shadow: 2px 2px 15px rgba(222, 222, 222, 0.4);
 }
 
 footer .title h3,
@@ -352,7 +349,7 @@ footer .social-group li:hover .social-link--youtube {
     margin-bottom: 10px;
   }
 
-  #statistics-card .card-title {
+  #statistics-card-wrapper .card-title {
     font-size: 1.3rem;
   }
 
@@ -371,7 +368,7 @@ footer .social-group li:hover .social-link--youtube {
 }
 
 /* Phones */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 448px) {
   #title {
     font-size: 1.75rem;
   }
@@ -379,21 +376,60 @@ footer .social-group li:hover .social-link--youtube {
   #description {
     font-size: 0.9rem;
   }
+  #intro-hero {
+    position: relative;
+    height: 50vh;
+  }
 
-  #statistics-card .card-body {
+  #statistics-card-wrapper {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 20px 0;
+    background: var(--primary-light);
+    height: auto;
+  }
+
+  #statistics-card-wrapper .card {
+    height: 100%;
+    text-align: center;
+    background: var(--primary);
+    box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  #statistics-card-wrapper .card:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3);
+  }
+
+  #statistics-card-wrapper img {
+    display: block;
+    height: 95px;
+    width: 115px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 8px;
+    box-shadow: 2px 5px 20px rgba(255, 255, 255, 0.3);
+    padding: 2px;
+    background-color: inherit;
+  }
+
+  #statistics-card-wrapper .card-body {
     padding-left: 7px;
     padding-right: 7px;
   }
 
-  #statistics-card .card-title {
+  #statistics-card-wrapper .card-title {
     font-size: 1.3rem;
   }
 
-  #statistics-card .card-body p:nth-child(2) {
+  #statistics-card-wrapper .card-body p:nth-child(2) {
     font-size: 0.84rem;
   }
 
-  #statistics-card .card-body p:last-child {
+  #statistics-card-wrapper .card-body p:last-child {
     font-size: 0.8rem;
   }
 }
